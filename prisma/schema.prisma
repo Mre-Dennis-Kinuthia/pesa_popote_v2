@@ -29,6 +29,7 @@ model Transaction {
 model User {
   id          Int           @id @default(autoincrement())
   email       String        @unique
+  phoneNumber Int           @unique
   password    String
   createdAt   DateTime      @default(now())
   updatedAt   DateTime
