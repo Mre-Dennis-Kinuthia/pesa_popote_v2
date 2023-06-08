@@ -2,10 +2,10 @@ import React from 'react';
 
 const HomePage = () => {
     return (
-        <div>
+        <main>
             <h2>Home</h2>
             {/* Add your home page content here */}
-        </div>
+        </main>
     );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUsPage = () => {
     return (
-        <div>
+        <main>
             <h2>Contact Us</h2>
             {/* Add your contact us page content here */}
             <p>
@@ -13,7 +13,7 @@ const ContactUsPage = () => {
                 <li>Phone: 123-456-7890</li>
                 <li>Address: 123 Street, City, Country</li>
             </ul>
-        </div>
+        </main>
     );
 };
 

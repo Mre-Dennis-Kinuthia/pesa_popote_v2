@@ -2,10 +2,10 @@ import React from 'react';
 
 const HowItWorksPage = () => {
   return (
-    <div>
+    <main>
       <h2>How It Works</h2>
       {/* Add your how it works page content here */}
-    </div>
+    </main>
   );
 };
 
