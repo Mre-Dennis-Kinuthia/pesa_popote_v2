@@ -9,7 +9,7 @@ function App() {
       <div>
         <NavigationBar />
         <Routes>
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="pages/LoginPage" element={<LoginPage />} />
           {/* Add other routes here */}
         </Routes>
       </div>
