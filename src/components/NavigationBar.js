@@ -9,7 +9,7 @@ const NavigationBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/admin">Admin</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
         <li>
           <Link to="/login">Login</Link>
