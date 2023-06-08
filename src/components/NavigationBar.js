@@ -1,24 +1,25 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const NavigationBar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <ScrollLink to="howitworks" smooth={true} duration={500}>How it works</ScrollLink>
         </li>
         <li>
-          <NavLink to="/login">Login</NavLink>
+          <ScrollLink to="contact" smooth={true} duration={500}>Contact Us</ScrollLink>
         </li>
         <li>
-          <NavLink to="/register">Join Us</NavLink>
+          <Link to="login" smooth={true} duration={500}>Login</Link>
         </li>
         <li>
-          <NavLink to="/howitworks">How it works</NavLink>
+          <Link to="register" smooth={true} duration={500}>Join Us</Link>
         </li>
       </ul>
     </nav>

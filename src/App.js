@@ -16,9 +16,9 @@ function App() {
         <NavigationBar />
         <MainPage />
         <Routes>
-          <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/howitworks" elemet={<HowItWorksPage />} />
+          <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>

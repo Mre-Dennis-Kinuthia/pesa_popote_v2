@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUsPage = () => {
     return (
-        <main>
+        <main id="contact">
             <h2>Contact Us</h2>
             {/* Add your contact us page content here */}
             <p>
