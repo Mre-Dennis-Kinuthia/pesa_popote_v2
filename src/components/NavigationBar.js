@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const NavigationBar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
+          <ScrollLink to="/" smooth={true} duration={500}>Home</ScrollLink>
         </li>
         <li>
           <ScrollLink to="howitworks" smooth={true} duration={500}>How it works</ScrollLink>
@@ -16,10 +16,10 @@ const NavigationBar = () => {
           <ScrollLink to="contact" smooth={true} duration={500}>Contact Us</ScrollLink>
         </li>
         <li>
-          <Link to="login" smooth={true} duration={500}>Login</Link>
+          <NavLink to="/login">Login</NavLink>
         </li>
         <li>
-          <Link to="register" smooth={true} duration={500}>Join Us</Link>
+          <NavLink to="/register">Register</NavLink>
         </li>
       </ul>
     </nav>
