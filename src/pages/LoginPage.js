@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LoginForm = () => {
+const LoginForm = ({ onCancel }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -20,6 +20,10 @@ const LoginForm = () => {
         // Reset form fields
         setUsername('');
         setPassword('');
+    };
+
+    const handleCancel = () => {
+        onCancel(); //Call the onCancel function from the parent component
     };
 
     return (
@@ -45,6 +49,7 @@ const LoginForm = () => {
                     />
                 </div>
                 <button type="submit">Login</button>
+                <button type="button" onClick={handleCancel}>Cancel</button>
             </form>
         </main>
     );

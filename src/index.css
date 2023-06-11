@@ -11,13 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-nav{
-position:absolute;
-top:0;
-height: 50px;
-width: 100%;
-background-color: aquamarine;
-}
+
 
 main{
   width:100%;

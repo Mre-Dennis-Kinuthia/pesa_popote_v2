@@ -1,0 +1,24 @@
+nav{
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+    height: 75px;
+    width: 100%;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+    height: 50px;
+    width: 150px;
+    background-color: aquamarine;
+    margin: 5px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.nav-item :hover{
+    background-color: #333;
+}

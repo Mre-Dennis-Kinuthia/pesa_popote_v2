@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RegisterPage = () => {
+const RegisterPage = ({onCancel}) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
@@ -28,7 +28,9 @@ const RegisterPage = () => {
         setPassword('');
         setEmail('');
     };
-
+    const handleCancel = () => {
+        onCancel(); // Call the onCancel function from the parent component
+    };
     return (
         <div>
             <h2>Signup</h2>
@@ -61,6 +63,7 @@ const RegisterPage = () => {
                     />
                 </div>
                 <button type="submit">Signup</button>
+                <button type="button" onClick={handleCancel}>Cancel</button>
             </form>
         </div>
     );
