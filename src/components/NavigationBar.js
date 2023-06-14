@@ -1,3 +1,4 @@
+//src/components/NavigationBar.js
 import React, { Component } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import './style.css'
@@ -63,9 +64,9 @@ export default class NavigationBar extends Component {
     Contact Us
   </button>
     </div>
-    <button onClick={this.props.toggleLoginPage}>Login</button>
-        <button onClick={this.props.toggleRegisterPage}>Register</button>
-      </div>
+      <button onClick={this.props.toggleLoginPage}>Login</button>
+      <button onClick={this.props.toggleRegisterPage}>Register</button>
+    </div>
         
       </div>
     </nav>

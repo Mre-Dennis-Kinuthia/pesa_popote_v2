@@ -1,3 +1,4 @@
+//App.js
 import React, { Component } from "react";
 import Section from "./components/Section";
 import LoginPage from './pages/LoginPage';
@@ -36,6 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar
+          baseUrl="http://localhost:3000/api/users"
           toggleLoginPage={this.toggleLoginPage}
           toggleRegisterPage={this.toggleRegisterPage}
         />
